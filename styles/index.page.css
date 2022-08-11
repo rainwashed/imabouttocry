@@ -1,0 +1,21 @@
+.button-array {
+    --arrayOpacity: 0.35;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    background-color: rgba(0, 0, 0, var(--arrayOpacity, 0.5));
+}
+
+.musi-player {
+    padding: var(--musicControlPadding);
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    height: 10%;
+    background-color: var(--musicControlBackground);
+}
+
+.musi-player img#audio_thumbnail {
+    width: auto;
+    height: 100%;
+}
