@@ -1,3 +1,9 @@
+body > h3 {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 100;
+    font-style: italic;
+}
+
 .button-array {
     --arrayOpacity: 0.35;
     left: 100%;
@@ -13,9 +19,63 @@
     transform: translateY(-100%);
     height: 10%;
     background-color: var(--musicControlBackground);
+    justify-content: center;
 }
 
 .musi-player img#audio_thumbnail {
+    margin-right: 2em;
     width: auto;
     height: 100%;
+    box-shadow: 0 0 1em #000;
+}
+
+.musi-player div.musi-player__progress {
+    width: 75%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.musi-player div.musi-player__progress div#audio_progress {
+    padding: 2%;
+    width: 100%;
+    height: 50px;
+    cursor: ew-resize;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.musi-player div.musi-player__progress div#audio_progress span {
+    --transitionDuration: 50ms;
+    width: 0%;
+    height: 2px;
+    background-color: var(--accentColorSecondary);
+    transition: width var(--transitionDuration) linear;
+}
+
+.musi-player div.musi-player__settings {
+    padding-left: 2em;
+}
+
+button.media-control-btn {
+    width: auto;
+    height: 75%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.media-control-btn i {
+    color: white;
+    transition: color 250ms linear;
+}
+
+button.media-control-btn:hover i,
+button.media-control-btn:focus i {
+    color: var(--accentColorPrimary);
+}
+
+button:focus {
+    outline: rgba(255, 255, 255, 0.2) solid 1px;
+    border-radius: 5px;
 }
