@@ -79,3 +79,20 @@ button:focus {
     outline: rgba(255, 255, 255, 0.2) solid 1px;
     border-radius: 5px;
 }
+
+/* todo: change these to fractional units for a grid display */
+.music-card {
+    width: 250px;
+    height: 300px;
+}
+
+div.add-new-card button {
+    background-color: transparent;
+    color: var(--accentColorSecondary);
+    border: 1px solid var(--accentColorPrimary);
+    font-size: 250%;
+}
+
+button {
+    cursor: pointer;
+}

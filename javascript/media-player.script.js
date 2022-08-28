@@ -7,6 +7,7 @@ class Epi {
             volume: 100,
             localSource: null
         }
+        this.audioQueue = [];
     }
 }
 
@@ -37,5 +38,7 @@ const anim = function () {
 }
 
 x = setInterval(anim, 200);
+
+const addMediaButton = document.getElementById("addMedia");
 
 //})() 

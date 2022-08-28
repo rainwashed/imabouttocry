@@ -7,10 +7,12 @@
         <title>ᵗᵒ ᶜʳʸ</title>
         <link rel="stylesheet" href="styles/root.css" type="text/css" />
         <link rel="stylesheet" href="styles/index.page.css" type="text/css" />
+        <!-- only import if needed, for now, no -->
+        <!-- <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" /> -->
         <link
             rel="shortcut icon"
             href="assets/icons/pensive.png"
-            type="image/x-icon"
+            type="image/png"
         />
         <script
             src="https://kit.fontawesome.com/3cad02112e.js"
@@ -20,7 +22,28 @@
     <body>
         <h1>I wanna cry.</h1>
         <h3>Listen to music while you cry...</h3>
-        <main></main>
+        <main>
+            <div class="flex-view flex-vert music-card add-new-card">
+                <button
+                    id="addMedia"
+                    class="full-width full-height single-item-center"
+                    title="Add a new media"
+                >
+                    <!-- <i class="fa-light fa-circle-plus"></i> -->
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+            </div>
+            <div class="flex-view flex-vert music-card" data-uid="111">
+                <img src="x" alt="y" />
+                <h6>Title</h6>
+                <p>Description</p>
+                <div class="flex-view flex-horiz music-card__typeofcontent">
+                    <p data-media-identifier="playlist">Playlist</p>
+                    <p>&#x2022</p>
+                    <p data-import-identifier="spotify">Imported from Spotify</p>
+                </div>
+            </div>
+        </main>
         <div class="fixed-pos full-width flex-view flex-horiz musi-player">
             <img
                 src="assets/placeholder/songpic.png"
