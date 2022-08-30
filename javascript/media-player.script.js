@@ -37,8 +37,12 @@ const anim = function () {
     progress++;
 }
 
-x = setInterval(anim, 200);
+// x = setInterval(anim, 200);
 
 const addMediaButton = document.getElementById("addMedia");
 
 //})() 
+
+setTimeout(() => {
+    document.getElementById("popup").classList.add("popup-visible");
+}, 200);
