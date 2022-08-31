@@ -95,3 +95,11 @@ main {
 .fa-solid {
     color: var(--textColorPrimary);
 }
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}

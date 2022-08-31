@@ -18,8 +18,10 @@
             src="https://kit.fontawesome.com/3cad02112e.js"
             crossorigin="anonymous"
         ></script>
-        <script src="javascript/utils.script.js" type="text/javascript"></script>
-        <script src="javascript/popup-api.script.js" type="text/javascript" defer></script>
+        <script
+            src="javascript/utils.script.js"
+            type="text/javascript"
+        ></script>
     </head>
     <body>
         <h1>I wanna cry.</h1>
@@ -42,25 +44,29 @@
                 <p>Description</p>
                 <div class="flex-view flex-horiz music-card__typeofcontent">
                     <p data-media-identifier="playlist">Playlist</p>
-                    <p>&#x2022</p>
-                    <p data-import-identifier="spotify">Imported from Spotify</p>
+                    <p>•</p>
+                    <p data-import-identifier="spotify">
+                        Imported from Spotify
+                    </p>
                 </div>
             </div>
             <!-- End comment -->
         </main>
         <div class="fixed-pos popup" id="popup">
-            <span class="display-inline-block full-width popup__drag" id="popup__drag"></span>
-            <button class="aspect-square single-item-center" id="popup__forceclose" title="Close Popup" onclick="(() => {
-                    if (typeof(utils) == 'undefined' || !utils) window?.location?.reload(); // unable to find the utils class so no choice but to reload and hope that the utils script is loaded.
-                    else utils?.closePopup();
-                })();">
+            <span
+                class="display-inline-block full-width popup__drag"
+                id="popup__drag"
+            ></span>
+            <button
+                class="aspect-square single-item-center"
+                id="popup__forceclose"
+                title="Close Popup"
+            >
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h6>Title</h6>
             <p>Description</p>
-            <div class="popup__actions">
-                
-            </div>
+            <div class="popup__actions"></div>
         </div>
         <div class="fixed-pos full-width flex-view flex-horiz musi-player">
             <img
@@ -108,6 +114,11 @@
             src="javascript/media-player.script.js"
             type="text/javascript"
         ></script>
+        <script
+            src="javascript/popup-api.script.js"
+            type="text/javascript"
+        ></script>
+
         <!-- <div class="flex-view flex-horiz fixed-pos button-array">
         <a class="display-inline-block aspect-square" href="https://discord.com/users/882769971913039965" target="_blank">
             

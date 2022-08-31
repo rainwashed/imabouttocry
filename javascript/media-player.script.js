@@ -5,44 +5,44 @@ class Epi {
     constructor() {
         this.audioSettings = {
             volume: 100,
-            localSource: null
+            localSource: null,
         }
-        this.audioQueue = [];
+        this.audioQueue = []
     }
 }
 
 const buttons = {
-    prevSong: document.querySelectorAll("button.media-control-btn")[0],
-    prev10s: document.querySelectorAll("button.media-control-btn")[1],
-    next10s: document.querySelectorAll("button.media-control-btn")[2],
-    nextSong: document.querySelectorAll("button.media-control-btn")[3],
+    prevSong: document.querySelectorAll('button.media-control-btn')[0],
+    prev10s: document.querySelectorAll('button.media-control-btn')[1],
+    next10s: document.querySelectorAll('button.media-control-btn')[2],
+    nextSong: document.querySelectorAll('button.media-control-btn')[3],
 }
 
-const audioTrack = document.getElementById("audio_progress");
-const audioProgressVisual = document.querySelector("div#audio_progress span");
-let progress = 1;
+const audioTrack = document.getElementById('audio_progress')
+const audioProgressVisual = document.querySelector('div#audio_progress span')
+let progress = 1
 
 function updateProgressVisual() {
-    audioProgressVisual.style.width = `${progress}%`;
+    audioProgressVisual.style.width = `${progress}%`
 }
 
-
-let x;
+let x
 const anim = function () {
-    updateProgressVisual();
+    updateProgressVisual()
     if (progress > 100) {
         clearInterval(x)
     }
-    console.log(progress);
-    progress++;
+    console.log(progress)
+    progress++
 }
 
 // x = setInterval(anim, 200);
 
-const addMediaButton = document.getElementById("addMedia");
+const addMediaButton = document.getElementById('addMedia')
 
-//})() 
+//})()
 
 setTimeout(() => {
-    document.getElementById("popup").classList.add("popup-visible");
-}, 200);
+    document.getElementById('popup').classList.add('visible')
+    document.getElementById('popup').classList.add('popup-visible')
+}, 200)

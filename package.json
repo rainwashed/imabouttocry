@@ -1,0 +1,11 @@
+{
+    "private": "true",
+    "scripts": {
+        "test": "echo \"Hello World!\"",
+        "lint": "prettier --config ./.prettierrc --check .",
+        "lint-write": "prettier --config -w ."
+    },
+    "dependencies": {
+        "prettier": "^2.7.1"
+    }
+}

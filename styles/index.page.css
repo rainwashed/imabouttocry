@@ -109,13 +109,13 @@ button {
     backdrop-filter: blur(20px);
     transition: transform 250ms cubic-bezier(0.33, 1, 0.68, 1);
     box-shadow: 0 0 0.5em #000;
-    visibility: hidden;
+    /* visibility: hidden; */
     z-index: 2;
 }
 
 div#popup.popup-visible {
     transform: translate(-50%, -50%) scale(1);
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 div#popup.popup-visible::before {
